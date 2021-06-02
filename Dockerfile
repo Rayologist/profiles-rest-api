@@ -3,8 +3,8 @@ LABEL author="rayologist1002@gmail.com"
 
 ENV PYTHONUNBUFFERED 1
 
-COPY ./requirement.txt /requirement.txt
-RUN pip install -r requirement.txt
+COPY ./requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
 
 COPY ./app /app
 WORKDIR /app
